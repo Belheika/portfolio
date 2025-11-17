@@ -32,11 +32,11 @@ tween = gsap.to(panels, {
         trigger: "#panels-container",
         pin: true,
         start: "top top",
-        scrub: 0.5, // Réduit le scrub pour moins de sensibilité
+        scrub: 0.5,
         snap: {
             snapTo: 1 / (panels.length - 1),
-            inertia: true, // Active l'inertia pour plus de fluidité
-            duration: {min: 0.3, max: 0.8} // Durées plus longues
+            inertia: true,
+            duration: {min: 0.3, max: 0.8}
         },
         end: () =>  "+=" + (panelsContainer.offsetWidth - innerWidth)
     }

@@ -80,7 +80,7 @@
                         <span class="text-xl md:text-2xl text-gray-600">(updated)</span>
                     </div>
 
-                    <div class="hidden lg:flex lg:w-1/2 justify-center items-center"> <!-- flex et items-center pour centrer verticalement -->
+                    <div class="hidden lg:flex lg:w-1/2 justify-center items-center">
                         <div class="relative">
                             <img src="images/projects/goodnightsun.gif" alt="Project GIF" class="w-4/5 max-w-lg shadow-2xl mx-auto"> <!-- mx-auto pour centrer horizontalement -->
                             <img src="images/projects/pin.png" alt="Pin" class="absolute -top-4 -left-4 lg:-top-8 lg:-left-8 w-16 h-16 lg:w-32 lg:h-32 rotate-12">
@@ -144,7 +144,7 @@
                             <div onclick="openVideoDemo('6rcI2odk-7A')" class="block mt-2 cursor-pointer">
                                 <img src="images/projects/watchdemo.png" alt="Watch Demo" class="w-40 md:w-48 lg:w-56 hover:scale-105 transition-transform mx-auto lg:mx-0">
                             </div>
-                            <img src="images/projects/hearts.png" alt="heart" class="hidden lg:block absolute -bottom-48 -right-20 w-80 lg:w-96 xl:w-[400px] opacity-100">
+                            <img src="images/projects/hearts.png" alt="heart" class="hidden lg:block absolute -bottom-48 -right-20 w-80 lg:w-96 xl:w-[400px] opacity-100 -z-10">
                         </div>
                     </div>
                 </article>
@@ -250,7 +250,7 @@
 
         <article id="panel-6" class="panel full-screen bg-[white] relative">
             <div class="absolute top-0 left-0 flex items-center p-4">
-                <img src="images/draws/about.png" alt="About" class="w-22 h-20 md:w-26 md:h-24 mr-3">
+                <img src="images/draws/about.png" alt="About" class="w-22 h-20 md:w-26 md:h-24 mr-3  hidden sm:block">
             </div>
 
             <div class="flex flex-col lg:flex-row gap-6 lg:gap-12 w-full h-full p-4 lg:p-8 pt-20 lg:pt-24">
@@ -260,44 +260,40 @@
                         <h2 class="agdasima-bold text-xl md:text-2xl lg:text-3xl mr-2">Why you'll love (or hate) working with me</h2>
                         <img src="images/projects/noeud.png" alt="Bowtie" class="w-12 h-12 lg:w-16 lg:h-16 -mt-5">
                     </div>
-                    <!-- + ET - -->
-                    <div class="flex flex-col sm:flex-row gap-4 lg:gap-8 mb-6 lg:mb-8">
-                        <img src="images/draws/+.png" alt="Plus" class="w-full sm:w-1/3 max-w-xs">
-                        <img src="images/draws/-.png" alt="Minus" class="w-full sm:w-1/3 max-w-xs">
+                    <div class="flex flex-row justify-start gap-4 lg:gap-8 mb-6 lg:mb-8">
+                        <img src="images/draws/+.png" alt="Plus" class="w-1/4 sm:w-1/5 md:w-1/4 max-w-xs">
+                        <img src="images/draws/-.png" alt="Minus" class="w-1/4 sm:w-1/5 md:w-1/4 max-w-xs">
                     </div>
-
                     <div class="relative">
-                        <p class="agdasima-regular text-lg md:text-xl lg:text-2xl ">
+                        <p class="agdasima-regular text-base md:text-xl lg:text-2xl ">
                             If you're still here after my little list, feel free to <span class="agdasima-bold">download my CV</span> or say hi at <a href="mailto:belindabbou@gmail.com" class="agdasima-bold hover:underline">belindabbou@gmail.com</a>
                         </p>
-                        <img src="images/draws/here.png" alt="Email decoration" class="absolute -bottom-12 right-13 w-42 lg:w-56">
-                    </div>
+                        <img src="images/draws/here.png" alt="Email decoration" class="absolute -bottom-12 right-13 w-32 lg:w-56 hidden sm:block">                    </div>
                 </div>
 
                 <div class="w-full lg:w-1/2 relative">
                     <img src="images/draws/pfi.png" alt="Déco gauche" class="absolute -top-8 -left-16 w-12 lg:w-16">
                     <img src="images/draws/pfo.png" alt="Déco droite" class="absolute -top-8 right-8 w-12 lg:w-16">
-                    <div class="agdasima-regular text-lg md:text-xl lg:text-2xl leading-relaxed space-y-4 lg:space-y-6">
+                    <div class="agdasima-regular text-base md:text-lg lg:text-xl leading-relaxed space-y-4 lg:space-y-6">
                         <p>Hey! I'm really glad you're here, hope you enjoy your visit :)</p>
                         <p>I'm <span class="agdasima-bold">Beli</span>, a French <span class="agdasima-bold">web developer</span> and <span class="agdasima-bold">UI/UX designer</span>. I trained as a developer at <span class="agdasima-bold">Epitech</span>, and along the way I discovered my love for design. I've explored <span class="agdasima-bold">UI/UX</span>, <span class="agdasima-bold">branding</span>, and all sorts of creative projects, and <span class="agdasima-bold">freelancing</span> gave me the freedom to experiment and shape ideas that truly feel like mine.</p>
                         <p>I also worked at <span class="agdasima-bold">Netri</span>, a pharma-tech company using <span class="agdasima-bold">organ-on-chip technology</span>, handling both <span class="agdasima-bold">web development</span> and <span class="agdasima-bold">UI/UX design</span>. It was fascinating and taught me the value of <span class="agdasima-bold">precision</span> and <span class="agdasima-bold">collaboration</span>.</p>
                         <p>Now I mix <span class="agdasima-bold">code and creativity</span> every day, building web experiences that are <span class="agdasima-bold">human, fun, and just a little unexpected</span>. When I'm not working, you'll probably find me <span class="agdasima-bold">sketching</span>, making <span class="agdasima-bold">music</span>, <span class="agdasima-bold">reading</span>, or planning my next <span class="agdasima-bold">adventure</span>.</p>
                     </div>
-
                     <div class="flex justify-between items-end absolute -bottom-8 left-0 right-35">
                         <a href="images/cv/cv.pdf" download="CV_Belinda_BBOU.pdf" class="cursor-pointer">
-                            <img src="images/draws/grab.png" alt="Grab my CV" class="w-40 lg:w-48 cursor-pointer mr-4 hover:scale-125 transition-transform duration-200">
+                            <img src="images/draws/grab.png" alt="Grab my CV" class="w-24 lg:w-40 xl:w-48 cursor-pointer hover:scale-125 transition-transform duration-200">
                         </a>
 
                         <a href="https://github.com/Belheika" target="_blank">
-                            <img src="images/draws/git.png" alt="My GitHub" class="w-40 lg:w-48 cursor-pointer ml-4 hover:scale-125 transition-transform duration-200">
+                            <img src="images/draws/git.png" alt="My GitHub" class="w-24 lg:w-40 xl:w-48 cursor-pointer hover:scale-125 transition-transform duration-200">
                         </a>
                     </div>
                 </div>
             </div>
 
-            <img src="images/draws/flowerL.png" alt="Déco" class="absolute bottom-0 left-0 w-28 sm:w-40 lg:w-40">
-            <img src="images/draws/flowerR.png" alt="Déco" class="absolute bottom-0 right-0 w-28 sm:w-40 lg:w-40">
+            <img src="images/draws/flowerL.png" alt="Déco" class="absolute bottom-0 left-0 w-16 sm:w-40 lg:w-40">
+            <img src="images/draws/flowerR.png" alt="Déco" class="absolute bottom-0 right-0 w-16 sm:w-40 lg:w-40">
         </article>
     </main>
 

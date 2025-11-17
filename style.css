@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+
+body {
+  overflow-x: hidden;
+}
+
+.full-screen {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#masthead {
+  position: fixed;
+  display: flex;
+  z-index: 9999;
+}
+#masthead a {
+  padding: 1rem 2rem;
+}
+
+#panels #panels-container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding: 0;
+  overflow: hidden;
+}
+#panels #panels-container .panel {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  text-align: left;
+}
+#panels-container .panel .panels-navigation {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+#panels #panels-container .panel .anchor-panel,
+#panels #panels-container .panel .nav-panel {
+  margin-right: 2rem;
+}
+#panels #panels-container .panels-navigation {
+  position: absolute;
+  width: 100%;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.github-link, .cv-link {
+    font-family: 'Agdasima', sans-serif;
+    font-weight: 700;
+    color: #E85C70;
+}
+.sticker {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.book-main {
+    z-index: 10;
+    position: relative;
+    cursor: pointer;
+}
+.book-container {
+    margin-top: 60px;
+}
+.titre-portfolio {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 30;
+    max-width: 400px;
+    width: 80%;
+}
+.panel.green {
+background-color: white;
+}
+.agdasima-bold {
+    font-family: 'Agdasima', sans-serif;
+    font-weight: 700;
+    color: #000;
+}
+
+.agdasima-regular {
+    font-family: 'Agdasima', sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+.panel h1{
+    font-family: 'Agdasima', sans-serif;
+    font-weight: 700;
+    color: black;
+}
+
